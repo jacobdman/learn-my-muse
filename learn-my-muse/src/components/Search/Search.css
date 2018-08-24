@@ -1,0 +1,40 @@
+.SearchItems {
+    display: flex;
+    align-items: center;
+}
+
+.SearchItems input {
+    width: 350px;
+    height: 25px;
+    box-shadow: none;
+    font-size: 18px;
+}
+
+.SearchItems input:focus {
+    outline: none;
+}
+
+.input1 {
+    border-radius: 4px 0 0 4px;
+    border: none;
+}
+
+.input2 {
+    border-left: 1px solid rgb(150, 150, 150);
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.SearchItems img {
+    padding: 2px;
+    box-sizing: border-box;
+    width: 27px;
+    height: 27px;
+    border-radius: 0 4px 4px 0;
+    background-color: #46B8DA;
+}
+
+.SearchItems img:hover {
+    background-color: #3FE7B1;
+}

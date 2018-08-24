@@ -1,0 +1,118 @@
+.ResultsBody {
+    height: 98vh;
+    background-color: #B3EEFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.SearchParameters {
+    background-color: rgb(255, 255, 255, 0.4);
+    margin: 25px;
+    margin-bottom: 0px;
+    height: 70px;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: #3FE7B1 2px solid;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgb(150, 150, 150, .6);
+}
+
+.ViewButton {
+    background-color: rgb(255, 255, 255, 0.4);
+    margin-bottom: 25px;
+    height: 40px;
+    width: 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: #3FE7B1 2px solid;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgb(150, 150, 150, .6);
+    position: relative;
+    top: -24px;
+}
+
+.ViewButton button {
+    border-radius: 6px;
+    padding: 5px 7px;
+    font-size: 13px;
+}
+
+.ViewButton button:hover {
+    background-color: #B3EEFF;
+    color: black;
+    border: 2px #3FE7B1 solid;
+}
+
+.ViewButton button:active {
+    background-color: #46B8DA;
+}   
+
+.ViewButton button:focus {
+    outline: none;
+}
+
+.ResultsTeacherBox {
+    background-color: rgb(255, 255, 255, 0.4);
+    margin: 10px;
+    width: 75vw;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0px 7.5px;
+    border: #46B8DA 3px solid;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgb(50, 50, 50, .5);
+}
+
+.GreyResultsBox {
+    height: 90%;
+    width: 135px;
+    background-color: rgb(231, 231, 231, 0.65);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.ResultsInfo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ResultsInfoItems {
+    display: flex;
+    align-items: center;
+}
+
+.ResultsInfoItems h4 {
+    margin-right: 10px;
+}
+
+.ResultReviewBox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ResultReviewBox p{
+    font-size: 10px;
+    color: rgb(150, 150, 150);
+}
+
+.ReviewRatingsimg {
+    height: auto;
+    width: 175px;
+    position: absolute;
+}
+
+.ReviewRatingsCrop {
+    overflow: hidden;
+}

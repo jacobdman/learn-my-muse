@@ -1,0 +1,62 @@
+.FooterBody {
+    height: 50px;
+    background-color: #21618C;
+    display: flex;
+    flex-direction: column;
+}
+
+.FooterItems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Footerlogo {
+    color: white;
+    font-family: Pacifico; 
+    font-size: 24px; 
+    font-style: italic; 
+    font-weight: 400; 
+}
+
+.FooterButtContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 260px;
+}
+
+.FooterButts {
+    border-radius: 6px;
+    padding: 10px 25px;
+    font-size: 12px;
+}
+
+.FooterButt1 {
+    background: #46B8DA;
+    color: white;
+    border: 2px #3FE7B1 solid;
+}
+
+.FooterButt2 {
+    background: #3FE7B1;
+    border: 2px #46B8DA solid;
+}
+
+.FooterButt1:hover {
+    background-color: #3FE7B1;
+    color: black;
+    border: 2px #46B8DA solid;
+}
+
+.FooterButt2:hover {
+    background-color: #46B8DA;
+    color: white;
+    border: 2px #3FE7B1 solid;
+}
+
+.FooterTop {
+    position: relative;
+    height: 15px;
+    background-color: #46B8DA;
+} 

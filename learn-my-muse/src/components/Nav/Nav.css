@@ -1,0 +1,184 @@
+.NavBody {
+    height: 75px;
+    background-color: #21618C;
+    display: flex;
+    flex-direction: column;
+}
+
+.NavItems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Navlogo {
+    color: white;
+    font-family: Pacifico; 
+    font-size: 33px; 
+    font-style: italic; 
+    font-weight: 400; 
+}
+
+.NavButtContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 260px;
+}
+
+.NavButts {
+    border-radius: 6px;
+    padding: 14px 32px;
+    font-size: 16px;
+}
+
+.NavButt1 {
+    background: #46B8DA;
+    color: white;
+    border: 2px #3FE7B1 solid;
+}
+
+.NavButt2 {
+    background: #3FE7B1;
+    border: 2px #46B8DA solid;
+}
+
+.NavButt1:hover {
+    background-color: #3FE7B1;
+    color: black;
+    border: 2px #46B8DA solid;
+}
+
+.NavButt2:hover {
+    background-color: #46B8DA;
+    color: white;
+    border: 2px #3FE7B1 solid;
+}
+
+.NavProfileContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 185px;
+}
+
+.NavProfileContainer:hover {
+    cursor: pointer;
+}
+
+.NavProfileContainer img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.NavProfileContainer h3 {
+    text-transform: capitalize;
+}
+
+.NavDropdown {
+    z-index: 1;
+    top: 45px;
+    right: 150px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+}
+
+@keyframes userArrow {
+    0% {transform: rotate(180deg)}
+}
+
+@keyframes UserMenuFade {
+    from {background-color: transparent; color: transparent; border: none; width: 0px; box-shadow: none;}
+    to {background-color: rgb(255, 255, 255, 0.4); color: black; border: #3FE7B1 2px solid; width: 100%; box-shadow: 4px 4px 6px rgb(150, 150, 150, .6);}
+}
+
+@keyframes dividerFade {
+    from {background-color: transparent; width: 0%}
+    to {background-color: black; width: 100%}
+}
+
+.UserMenuArrow {
+    height: 0px;
+    width: 0px;
+    background-color: transparent;
+    border: transparent 15px solid;
+    border-bottom: white 15px solid;
+    margin-bottom: 5px;
+    animation-name: userArrow;
+    animation-duration: .5s;
+}
+
+.NavUserMenu {
+    margin-left: auto;
+    margin-right: auto;
+    height: 125px;
+    background-color: transparent; 
+    color: transparent;
+    animation-name: UserMenuFade;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.NavUserMenu h4 {
+    font-size: 20px;
+    margin: 12px;
+    margin-left: 1px;
+}
+
+.NavUserMenu p:hover {
+    cursor: pointer;
+}
+
+.NavUserMenuSeperator {
+    height: 1px;
+    width: 0%;
+    background-color: transparent;
+    animation-name: dividerFade;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+    transition: width 2s;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* .UserMenuClose {
+    height: 30%;
+    width: 30%;
+    border: black 2px solid;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.closeArrow {
+    height: 0px;
+    width: 0px;
+    background-color: transparent;
+    border: transparent 10px solid;
+    border-bottom: black 10px solid;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+.closeLine {
+    height: 3px;
+    width: 16px;
+    background-color: black;
+} */
+
+.NavBottom {
+    position: relative;
+    height: 15px;
+    background-color: #46B8DA;
+} 

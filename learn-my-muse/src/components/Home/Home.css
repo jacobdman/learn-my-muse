@@ -1,0 +1,35 @@
+.HomeBody {
+    height: 95%;
+}
+
+.HomeImageBackground {
+    background-image: url("../Assets/adrian-korte-76051-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    background-position: 50% 65%; 
+    display: flex;
+    flex-direction: column;
+}
+
+.HomeSearchBox {
+    background-color: rgb(231, 231, 231, 0.6);
+    width: 750px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Logo {
+    color: white;
+    font-family: Pacifico; 
+    font-size: 80px; 
+    font-style: italic; 
+    font-weight: 400; 
+    margin: 95px 0px; 
+    text-shadow: 3px 3px 10px #21618C
+}

@@ -1,0 +1,56 @@
+.ResultsBody {
+    height: 98vh;
+    background-color: #B3EEFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.SearchParameters {
+    background-color: rgb(255, 255, 255, 0.4);
+    margin: 25px;
+    margin-bottom: 0px;
+    height: 70px;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: #3FE7B1 2px solid;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgb(150, 150, 150, .6);
+}
+
+.ViewButton {
+    background-color: rgb(255, 255, 255, 0.4);
+    margin-bottom: 25px;
+    height: 40px;
+    width: 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: #3FE7B1 2px solid;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgb(150, 150, 150, .6);
+    position: relative;
+    top: -24px;
+}
+
+.ViewButton button {
+    border-radius: 6px;
+    padding: 5px 7px;
+    font-size: 13px;
+}
+
+.ViewButton button:hover {
+    background-color: #B3EEFF;
+    color: black;
+    border: 2px #3FE7B1 solid;
+}
+
+.ViewButton button:active {
+    background-color: #46B8DA;
+}   
+
+.ViewButton button:focus {
+    outline: none;
+}
