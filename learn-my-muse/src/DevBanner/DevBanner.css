@@ -1,0 +1,17 @@
+.Devbanner {
+    height: 30px;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px;
+    padding: 0px;
+}
+
+.DevbannerText {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+}

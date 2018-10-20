@@ -141,11 +141,11 @@ a div {
     display: flex;
     flex-direction: column;
     width: 180px;
-    top: -2px;
+    top: -5px;
 }
 
 .mapboxgl-popup {
-    top: -12px !important;
+    top: -45px !important;
 }
   
 .mapMarker {

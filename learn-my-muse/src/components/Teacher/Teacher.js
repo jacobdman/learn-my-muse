@@ -48,6 +48,11 @@ class Teacher extends Component {
                         <div className="TeacherVerticalSeperator">
                         </div>
                         <div className="TeacherBox TeacherBox2">
+                            <div className="TeacherBio">
+                                {teacher.teacher_bio}
+                                <div className="TeacherSeperator">
+                                </div>
+                            </div>
                         </div>
                         <div className="TeacherVerticalSeperator">
                         </div>

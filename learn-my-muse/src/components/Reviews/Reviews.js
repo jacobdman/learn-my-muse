@@ -21,7 +21,6 @@ class Reviews extends Component {
     componentDidMount = (props) => {
         axios.get(`http://localhost:4000/api/getReviewsSpecific/${this.props.id}`)
             .then(result => {
-                console.log('asdfasdfasdfasdfasdfasdf', result.data)
                 const arr = result.data
                 const reviewObj = {}
                 for (var i = 0; i <= arr.length - 1; i++) {
@@ -65,11 +64,11 @@ class Reviews extends Component {
                     <div className="leavingRatings" >
                         Leave a Review!
                         <div className="leavingRatingImgContainer" >
-                            {Svg('ratingImg1')}
+                            {Svg('svgNoteLeaveReview', 'ratingImg1', 'ratingImg2', 'ratingImg3', 'ratingImg4', 'ratingImg5')}
                         </div>
                     </div>
                     <div className="leavingReviewText" >
-                        <input />
+                        <input placeholder="Leave a review!" />
                         <button className="leavingReviewButt" >Submit</button>
                     </div>
                 </div>
@@ -85,7 +84,6 @@ class Reviews extends Component {
                 {this.leaveReview()}
                 {this.state.reviews.map(review => (
                     <div className="ReviewInfo" key={review.id}>
-                        {console.log('review text', review.text)}
                         {review.profile_picture ? <img className="GreyResultsBox" src={review.profile_picture} alt="User profile" /> : <img className="GreyResultsBox" src={require("../Assets/blank_profile.png")} alt="User profile" />}
                         <div className="ReviewInfoItemBox">
                             <div className="ReviewInfoItems1">

@@ -46,30 +46,65 @@
 .leavingRatingImgContainer {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 }
 
-.svg-note {
-    height: 50px;
-    width: 34px;
+.Parent {
+    display: flex;
+    height: 60px;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.svgNoteLeaveReview {
+    height: 55px;
+    width: 37px;
     fill: transparent;
     stroke: black;
+    stroke-width: 4px;
+    transition: .4s;
+}
+
+.ratingImg1:hover {
+    fill: yellow;
+}
+
+.ratingImg2:hover,
+.ratingImg2:hover + .ratingImg1 {
+    fill: yellow;
+}
+
+.ratingImg3:hover,
+.ratingImg3:hover + .ratingImg2,
+.ratingImg3:hover ~ .ratingImg1 {
+    fill: yellow;
+}
+
+.ratingImg4:hover,
+.ratingImg4:hover + .ratingImg3,
+.ratingImg4:hover ~ .ratingImg2,
+.ratingImg4:hover ~ .ratingImg1 {
+    fill: yellow;
+}
+
+.ratingImg5:hover,
+.ratingImg5:hover + .ratingImg4,
+.ratingImg5:hover ~ .ratingImg3,
+.ratingImg5:hover ~ .ratingImg2,
+.ratingImg5:hover ~ .ratingImg1 {
+    fill: yellow;
+}
+
+.ratingImg1:hover,
+.ratingImg2:hover,
+.ratingImg3:hover,
+.ratingImg4:hover,
+.ratingImg5:hover {
+    height: 60px;
+    width: 45px;;
     stroke-width: 5px;
-}
-
-.ratingImg1:hover .svg-note {
-    fill: yellow;
-}
-
-.ratingImg2:hover .svg-note {
-    fill: yellow;
-}
-
-.ratingImg2:hover ~ .ratingImg1 > .svg-note {
-    fill: yellow;
-}
-
-.inSvgImg1 {
-    
+    transition: .4s;
 }
 
 .leavingReviewText {
