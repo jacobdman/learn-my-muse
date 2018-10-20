@@ -1,4 +1,5 @@
-require('dotenv').config();
+const path = require('path')
+require('dotenv').config({'path': path.join(__dirname, '..', ".env")});
 const express = require('express');
 const bodyParser = require('body-parser');
 const session = require('express-session');
@@ -9,7 +10,7 @@ const massive = require('massive');
 const cors = require('cors');
 
 const app = express();
-massive( process.env.CONNECTION_STRING ).then( dbInstance => { app.set('db', dbInstance) });
+massive( process.env.CONNECTION_STRING, {"scripts":path.join(__dirname, "db")}).then( dbInstance => { app.set('db', dbInstance) });
 app.use( session({
     secret: 'Sp00ky seeeecr3t',
     resave: false,
@@ -73,6 +74,10 @@ app.get('/api/getTeacher/:id', controller.getTeacher)
 app.get('/api/getReviews/:id', controller.getReviews)
 app.get('/api/getReviewsSpecific/:id', controller.getReviewsSpecific)
 app.post('/api/postTeacherCoordinates/:id', controller.postTeacherCoordinates)
+
+app.get('/*', express.static(
+    path.join(__dirname, '..', 'build')
+))
 
 let PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {console.log(`Listening on port: ${PORT}`);});
